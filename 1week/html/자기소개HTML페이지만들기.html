@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개</title>
+    <style>
+        body { 
+            background-color: linen; color: green;
+            margin-left: 40px; margin-right: 40px;
+        }
+        h3 { 
+            text-align: center; color: darkred;
+        }
+        hr {
+            height: 5px; border: solid grey;
+            background-color: grey;
+        }
+        span {
+            color: blue; font-size: 20px;
+        }
+    </style>
+    <script>
+        function show(){
+            document.getElementById("fig").src="Selfie.jpg";
+        }
+        function hide(){
+            document.getElementById("fig").src="";
+        }
+    </script>
+</head>
+<body> 
+    <h3 onmouseover="show()" onmouseout="hide()">김다빈</h3>
+    <hr>
+    <div><img id="fig" src=""></div>
+    경성대학교 소프트웨어학과 2학년 2022564004 김다빈입니다.
+    <br>2003년 7월 6일 생으로 2023년 기준 만 나이 20살입니다.
+    <br>노래를 들으며 휴식하거나 가볍게 산책하는 것, 맛있는 디저트 먹는 것을 좋아합니다.
+    <br>3학년이 되기 전 졸업 후 진로 분야를 좀 더 명확히 결정하는 데 목표하고 있습니다.
+    <br>현재 관심있는 전공 분야는 시스템, 보안, 네트워크 분야입니다. 
+</body>
+</html>
