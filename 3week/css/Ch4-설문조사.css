@@ -1,0 +1,44 @@
+body {
+    background-color: aliceblue;
+}
+
+h1 {
+    color: brown;
+    text-align: center;
+}
+
+span {
+    font-weight: bold;
+    color: blue;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+form {
+    background-color: plum;
+}
+
+div div {
+    display: flex;
+}
+
+div div div {
+    display: flex;
+}
+
+p {
+    font-size: 1em;
+    text-indent: 1em;
+}
+
+footer {
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#select {
+    position: relative;
+    top: 130px;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 응용</title>
+    <style>
+        img {
+            width: 20px;
+            height: 20px;
+        }
+        @keyframes slide-in {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: 0;
+            }
+        }
+        p {
+            position: relative;
+            padding: 20px;
+            color: #333;
+            
+            animation-name: slide-in;
+            animation-duration: 3s;
+            animation-timing-function: ease;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+    </style>
+</head>
+<body>
+    <h3>애니메이션 응용</h3>
+    <hr>
+    <p>
+        <img src="../image/questionmark.png" alt="questionmark">질문 있습니다.
+    </p>
+</body>
+</html>

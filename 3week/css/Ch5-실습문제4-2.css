@@ -1,0 +1,11 @@
+ul {
+    background-image: url("../image/worldmap.png");
+    list-style-type: square;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 200px 170px;
+    color: blue;
+}
+ul li:hover {
+    background-color: yellowgreen;
+}

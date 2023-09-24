@@ -9,25 +9,20 @@ h1 {
 
 h2 {
     color: blue;
-    text-shadow: 
-                0 0 5px skyblue;
+    text-shadow: 0 0 5px skyblue;
 }
 
 hr {
     border: 1px solid black;
 }
 
+#select {
+    display: inline-block;
+}
+
 .img {
     width: 350px;
     height: 250px;
-}
-
-ul {
-    border: 1px dotted black;
-}
-
-a {
-    text-decoration: none;
 }
 
 p {

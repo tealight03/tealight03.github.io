@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>어지러워요</title>
+    <style>
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        
+        img {
+            transform: rotate(360deg), infinite;
+            width: 100px;
+			height: 100px;
+            animation-name: rotate;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: forwards
+        }
+    </style>
+</head>
+<body>
+    <h3>어지러워요</h3>
+    <hr>
+    <img src="../image/spongebob.png" alt="네모바지 스폰지밥">
+</body>
+</html>
