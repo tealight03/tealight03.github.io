@@ -48,6 +48,16 @@ h2 {
     100% {color: #CE9F0F}
 }
 
+.baekjoon {
+    width: 500px;
+    height: 300px;
+}
+
+.python {
+    width: 350px;
+    height: 220px;
+}
+
 #my_info h2 {
     display: none;
 }
