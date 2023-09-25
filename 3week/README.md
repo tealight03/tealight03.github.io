@@ -1,5 +1,10 @@
 # 자기소개서
-![image](https://github.com/tealight03/tealight03.github.io/assets/138011998/d9dc9ccf-48a1-4d00-918a-38dc9ba3dcd2)
+<h3>원본 버전</h3>
+
+
+<h3>수정본</h3>
+원본에서 자기소개란, 하단의 프로젝트 부분을 참여했던 프로젝트들로 콘텐츠를 수정하여 저만의 자기소개서 html 문서를 제작하였습니다.
+또한 CSS3의 애니메이션 기능을 프로젝트 헤더에 적용하여 화면이 실행되는 동안 애니메이션이 동작하도록 구현하였습니다.
 
 
 # Ch4-Open Challenge
