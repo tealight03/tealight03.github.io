@@ -7,54 +7,58 @@
     <link rel="stylesheet" href="../css/Ch5-설문조사.css">
 </head>
 <body>
-    <h1>설문지</h1>
-    <p>
-        소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.
-    </p>
-    <hr>
-    <form>
-        <div>
+    <div id="header">
+        <h1>설문지</h1>
+        <p>
+            소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.
+        </p>
+        <hr>
+    </div>
+    <div id="form">
+        <form>
             <div>
-                <span>학년</span>
-                <input type="radio" name="grade" value="1">1학년<br>
-                <input type="radio" name="grade" value="2" checked>2학년<br>
-                <input type="radio" name="grade" value="3">3학년<br>
-                <input type="radio" name="grade" value="4">4학년<br>
+                <div>
+                    <span>학년</span>
+                    <input type="radio" name="grade" value="1">1학년<br>
+                    <input type="radio" name="grade" value="2" checked>2학년<br>
+                    <input type="radio" name="grade" value="3">3학년<br>
+                    <input type="radio" name="grade" value="4">4학년<br>
+                </div>
             </div>
-        </div>
-        <div>
             <div>
-                <span>성별</span>
-                <input type="radio" name="gender" value="1">남<br>
-                <input type="radio" name="gender" value="2" checked>여<br>
+                <div>
+                    <span>성별</span>
+                    <input type="radio" name="gender" value="1">남<br>
+                    <input type="radio" name="gender" value="2" checked>여<br>
+                </div>
             </div>
-        </div>
-        <div>
-            <span>관심 분야</span>
-            <select name="section" id="">
-                <option value="1">모바일 소프트웨어</option>
-                <option value="2">정보 보안</option>
-                <option value="3">임베디드 시스템</option>
-                <option value="4">데이터베이스</option>
-                <option value="5">운영 체제(OS)</option>
-            </select>
-        </div>
-        <div>
             <div>
-                <span>진로(다중 선택)</span>
-                <input type="checkbox" value="1" checked>개발 
-                <input type="checkbox" value="2">기획 
-                <input type="checkbox" value="3">영업 
-                <input type="checkbox" value="4">창업 
+                <span>관심 분야</span>
+                <select name="section" id="">
+                    <option value="1">모바일 소프트웨어</option>
+                    <option value="2">정보 보안</option>
+                    <option value="3">임베디드 시스템</option>
+                    <option value="4">데이터베이스</option>
+                    <option value="5">운영 체제(OS)</option>
+                </select>
             </div>
-        </div>
-        <div>
             <div>
-                <span id="select">남기고 싶은 말</span> 
-                <textarea cols="30" rows="10">글을 남겨주세요</textarea>
+                <div>
+                    <span>진로(다중 선택)</span>
+                    <input type="checkbox" value="1" checked>개발 
+                    <input type="checkbox" value="2">기획 
+                    <input type="checkbox" value="3">영업 
+                    <input type="checkbox" value="4">창업 
+                </div>
             </div>
-        </div>
-    </form>
+            <div>
+                <div>
+                    <span id="select">남기고 싶은 말</span> 
+                    <textarea cols="30" rows="10">글을 남겨주세요</textarea>
+                </div>
+            </div>
+        </form>
+    </div>
     <footer>
         <p>
             Copyright 2023 by Davin

@@ -16,17 +16,19 @@
     <audio src="../music/BTS-Love Myself.mp3" autoplay loop>
         브라우저가 audio태그를 지원하지 않습니다.
     </audio>
-    <h1><b>보안(Security)</b></h1>
-    <p>
-        정보 보호의 정의 : 인가된 사용자만<b>(기밀성)</b>, 완전하고 정확한 정보에<b>(무결성)</b>, 필요로 할 때마다 접근할 수 있도록 하는 것<b>(가용성)</b>
-        <br>컴퓨터의 보안 기술은 컴퓨터 시스템과 데이터를 악의적인 공격과 위협으로부터 보호하는 데 사용되는 기술이다.
-        <br>네트워크에서 들어오는 트래픽을 모니터하고 허용되지 않은 접근을 차단하는 역할을 하는 방화벽(Firewall), 
-        <br>데이터의 안전한 전송을 보장하는 데이터를 읽을 수 없는 형태로 변환하여 정보 유출을 방지하는 SSL/TLS 프로토콜을 다루는 암호화(Encryption), 
-        <br>사용자 및 그룹에 대한 권한을 설정하여 데이터와 시스템에 접근하는 권한을 관리하고 제어하는 접근 제어(Access Control) 등의 주요 기술을 다룬다.
-    </p>
-    <hr>
+    <div id="header">
+        <h1><b>보안(Security)</b></h1>
+        <p>
+            정보 보호의 정의 : 인가된 사용자만<b>(기밀성)</b>, 완전하고 정확한 정보에<b>(무결성)</b>, 필요로 할 때마다 접근할 수 있도록 하는 것<b>(가용성)</b>
+            <br>컴퓨터의 보안 기술은 컴퓨터 시스템과 데이터를 악의적인 공격과 위협으로부터 보호하는 데 사용되는 기술이다.
+            <br>네트워크에서 들어오는 트래픽을 모니터하고 허용되지 않은 접근을 차단하는 역할을 하는 방화벽(Firewall), 
+            <br>데이터의 안전한 전송을 보장하는 데이터를 읽을 수 없는 형태로 변환하여 정보 유출을 방지하는 SSL/TLS 프로토콜을 다루는 암호화(Encryption), 
+            <br>사용자 및 그룹에 대한 권한을 설정하여 데이터와 시스템에 접근하는 권한을 관리하고 제어하는 접근 제어(Access Control) 등의 주요 기술을 다룬다.
+            <hr>
+        </p>
+    </div>
     <div id="select">
-        <div>
+        <div id="left">
             <h2>목차</h2>
             <ul>
                 <li><a href="#section1">방화벽(Firewall)</a></li>
@@ -34,7 +36,7 @@
                 <li><a href="#section3">접근 제어(Access Control)</a></li>
             </ul>
         </div>
-        <div>
+        <div id="right">
             <section id="section1">
                 <h2>
                     <a href="https://terms.naver.com/entry.naver?docId=1179934&cid=40942&categoryId=32853">방화벽(Firewall)</a>
@@ -84,7 +86,8 @@
     </div>
     <footer>
         <p>
-            설문조사<br>Copyright 2023 by Davin
+            <a href="../html/Ch5-설문조사.html">설문조사</a>
+            <br>Copyright 2023 by Davin
         </p>
     </footer>
 </body>

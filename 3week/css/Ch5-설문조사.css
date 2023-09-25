@@ -7,6 +7,27 @@ h1 {
     text-align: center;
 }
 
+#header {
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    bottom: 620px;
+}
+
+#form {
+    position: fixed;
+    top: 130px;
+    bottom: 100px;
+}
+
+footer {
+    position: fixed;
+    top: 400px;
+    bottom: 290px;
+    left: 0px;
+    right: 70px;
+}
+
 span {
     font-weight: bold;
     color: blue;

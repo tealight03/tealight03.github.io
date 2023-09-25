@@ -16,8 +16,44 @@ hr {
     border: 1px solid black;
 }
 
+#header {
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    bottom: 200px;
+    left: 0;
+    right: 0;
+}
+
 #select {
     display: inline-block;
+}
+
+#left {
+    background-color: orange;
+    position: fixed;
+    top: 200px;
+    bottom: 80px;
+    left: 0px;
+    right: 0px;
+}
+
+#right {
+    background-color: skyblue;
+    position: fixed;
+    top: 200px;
+    bottom: 80px;
+    left: 240px;
+    right: 0;
+}
+
+footer {
+    background-color: purple;
+    position: fixed;
+    top: 1000px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
 }
 
 .img {
