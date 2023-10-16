@@ -37,9 +37,6 @@
 <img width="367" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/23b33833-9ac0-4734-b49d-036cf29aa29b">
 <img width="176" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/83d45a76-a800-44cf-965e-ea487b1989ad">
 
-
-<br>
-
 # Open Challenge-7
 <img width="276" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/7a93c688-2576-4863-a3cf-1508a69b1d61">
 
@@ -51,13 +48,40 @@
 <img width="310" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/ce83dec6-32cb-4304-9aab-413d930ce46d">
 
 # Ch7. 실습문제 3
+<img width="414" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/082c7c35-87f8-43b3-8255-0e84f35be5c7">
 
 # Ch7. 실습문제 4
+<img width="354" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/8da3c4a7-2aab-485a-8b9b-e3930d9f7711">
+<img width="354" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/09688853-47c7-4739-a5c9-0f66513011ff">
+
+
 # Ch7. 실습문제 5
+<img width="412" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/18133a63-e088-4476-a4f3-b8726623b73b">
+
 # Ch7. 실습문제 6
+<img width="367" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/b67e9025-6bce-4098-8142-3540d6798cab">
+<img width="140" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/9fdaa9db-4a07-411f-ac06-e9e059f5f524">
+
 # Ch7. 실습문제 7
+<img width="1224" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/c9cf1b1b-74fa-48d3-8244-aa741f86b669">
+
 # Ch7. 실습문제 8
+<img width="1145" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/d06f04f7-6aa9-4e97-ae89-fa489ef7ebb4">
+
 # Ch7. 실습문제 9-1
+<img width="397" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/f11dc5ad-3a03-46b2-99bb-3d9938377f6a">
+<img width="625" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/f8170e54-9303-49a8-804f-deb70e5956f1">
+
 # Ch7. 실습문제 9-2
+<img width="392" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/4861f062-e320-45bf-8029-a5f572873303">
+<img width="620" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/56999376-f67c-4bbb-a4d6-8f67b1f0284c">
+
 # Ch7. 실습문제 9-3
+<img width="383" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/8f09d48a-c7f5-49d1-bf1a-1d1e0d4d9e2e">
+<img width="618" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/686b7372-1b69-42c1-a76a-7d68e12bd5b8">
+
 # Ch7. 실습문제 10
+<img width="368" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/c71de8ea-0b0b-44c6-ac2b-89366bc7bd85">
+<img width="230" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/6691e9c2-b587-419f-87bc-0b235c49b874">
+
+
