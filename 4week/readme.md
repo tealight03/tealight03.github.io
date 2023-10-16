@@ -49,6 +49,7 @@
 
 # Ch7. 실습문제 3
 <img width="414" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/082c7c35-87f8-43b3-8255-0e84f35be5c7">
+<img width="388" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/e82d4864-5d03-4210-bd2a-959aa8c8e602">
 
 # Ch7. 실습문제 4
 <img width="354" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/8da3c4a7-2aab-485a-8b9b-e3930d9f7711">
