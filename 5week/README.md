@@ -1,5 +1,7 @@
 # Ch8-openChallenge
-<img width="1254" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/063feece-5230-496a-b98f-f71cd911b91c">
+<img width="1062" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/93be052a-24f7-4960-b8c5-7e3e69da8c38">
+<img width="1083" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/8c5c9925-00e4-4bf7-b7a3-38b914351e02">
+
 
 # 실습문제 1-1
 <img width="488" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/74cbfc82-4ddc-4ce0-956a-aa3b96902f8a">
@@ -54,7 +56,7 @@
 <img width="402" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/5930b7ab-0379-4151-97ed-83b541c52ca5">
 
 # Ch9-openChallenge
-<img width="449" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/8bd2f047-ca84-4225-8c6d-48b32e31fb4c">
+<img width="494" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/7c9787d0-f915-4b09-a568-70bbf934d257">
 
 # 실습문제 1
 <img width="1245" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/b133c5aa-5412-4140-ab3b-b8db6493ad2e">
