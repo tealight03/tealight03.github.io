@@ -5,55 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>마우스 클릭 연습</title>
     <style>
+        table {
+            border-collapse: collapse;
+        }
+
         td {
-            border: 1px solid black;
             width: 30px;
             height: 30px;
-            text-align: center;
+            border: 1px solid black;
+            cursor: pointer;
         }
+
         img {
-            width: 25px;
+            width: 30px;
             height: 25px;
+            object-fit: cover;
         }
     </style>
 </head>
-<body onload="setRandomImg()">
+<body>
     <h3>마우스 클릭 연습</h3>
     <hr>
-    <div id="table-body"></div>
+    <table id="grid"></table>
+
     <script>
-        const tableContainer = document.getElementById("table-body");
-        // 10x10 크기의 표를 생성합니다.
-        const table = document.createElement("table");
-        for (i = 1; i <= 10; i++) {
-            const row = document.createElement("tr");
-            for (j = 1; j <= 10; j++) {
-                const cell = document.createElement("td");
-                cell.onclick = setRandomImg;
-                const img = document.createElement("img");
-                img.src = "";
-                img.alt = '';
-                cell.appendChild(img);
-                row.appendChild(cell);
+        const grid = document.getElementById("grid");
+
+        const numRows = 10;
+        const numCols = 10;
+        const imagePath = "../image/spongebob.png";
+
+        function createGrid() {
+            for (let i = 0; i < numRows; i++) {
+                const row = document.createElement("tr");
+                for (let j = 0; j < numCols; j++) {
+                    const cell = document.createElement("td");
+                    cell.addEventListener("click", handleCellClick);
+                    row.appendChild(cell);
+                }
+                grid.appendChild(row);
             }
-            table.appendChild(row);
         }
-        tableContainer.appendChild(table);
 
-        function setRandomImg(){
-            const imgTags = document.getElementsByTagName('img');
-
-            const filledCell = Array.from(imgTags).filter(img => img.src !== "");
-
-            filledCell.src="";
-
-            // 랜덤한 인덱스를 생성합니다.
-            const randIdx = Math.floor(Math.random() * imgTags.length);
-
-            // 선택한 이미지 태그에 "spongebob.png" 이미지를 설정합니다.
-            imgTags[randIdx].src = "../image/spongebob.png";
-            imgTags[randIdx].alt = "SpongeBob Image";
+        function getRandomCell() {
+            const row = Math.floor(Math.random() * numRows);
+            const col = Math.floor(Math.random() * numCols);
+            return { row, col };
         }
+
+        function handleCellClick(event) {
+            const cells = document.querySelectorAll("td");
+            cells.forEach(cell => {
+                cell.innerHTML = "";
+            });
+
+            const randomCell = getRandomCell();
+            const selectedCell = document.querySelector(`tr:nth-child(${randomCell.row + 1}) td:nth-child(${randomCell.col + 1})`);
+            const image = document.createElement("img");
+            image.src = imagePath;
+            selectedCell.appendChild(image);
+        }
+
+        createGrid();
     </script>
 </body>
 </html>

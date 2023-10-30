@@ -5,13 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>갬블링 게임</title>
     <style>
-        .container {
-            text-align: center;
-        }
-
         .numbers {
             display: flex;
-            justify-content: center;
             margin-bottom: 20px;
         }
 
@@ -31,6 +26,7 @@
             font-size: 1.2em;
             font-weight: bold;
             margin-top: 20px;
+            color: violet; /* 결과 텍스트의 색상을 violet으로 지정 */
         }
     </style>
 </head>
@@ -44,32 +40,45 @@
             <div id="number2" class="number">0</div>
             <div id="number3" class="number">0</div>
         </div>
-        <button id="generateButton">Generate Numbers</button>
         <p id="result"></p>
     </div>
     <script>
         const numbers = document.querySelectorAll('.number');
         const generateButton = document.getElementById('generateButton');
-        const resultParagraph = document.getElementById('result');
+        const result = document.getElementById('result');
 
-        numbers.forEach(number => {
+        numbers.forEach((number, index) => {
             number.addEventListener('click', () => {
                 const randomValue = Math.floor(Math.random() * 3);
                 number.textContent = randomValue;
+                
+                // 마지막 숫자를 클릭한 경우에만 check() 함수를 호출
+                if (index === 2) {
+                    check();
+                }
             });
         });
 
-        generateButton.addEventListener('click', () => {
+        function check(){
             const num1 = parseInt(numbers[0].textContent);
             const num2 = parseInt(numbers[1].textContent);
             const num3 = parseInt(numbers[2].textContent);
 
             if (num1 === num2 && num1 === num3) {
-                resultParagraph.textContent = 'Success(click here to do again)';
+                result.textContent = 'Success(click here to do again)';
             } else {
-                resultParagraph.textContent = 'fail(click here to do again)';
+                result.textContent = 'fail(click here to do again)';
             }
-        });
+
+            result.style.cursor = 'pointer';
+            result.addEventListener('click', () => {
+                // 클릭된 텍스트를 완전히 사라지도록 함
+                result.textContent = '';
+                numbers.forEach(number => {
+                    number.textContent = '0';
+                });
+            });
+        }
     </script>
 </body>
 </html>
