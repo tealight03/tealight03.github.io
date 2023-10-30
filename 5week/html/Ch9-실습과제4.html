@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onmousemove</title>
+    <style>
+        #cursor {
+            position: fixed;
+            width: 30px;
+            height: 30px;
+            pointer-events: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h3>이미지 커서 만들기</h3>
+    <hr>
+    <p>
+        마우스를 움직이면 이미지로 만든 커서가 마우스를 따라 다닙니다.
+    </p>
+
+    <div id="cursor">
+        <img src="../image/spongebob.png" width="30" height="30" alt="">
+    </div>
+    <script>
+        let cursor = document.getElementById('cursor');
+
+        document.onmousemove = function(event) {
+            cursor.style.left = (event.pageX - 15) + 'px';
+            cursor.style.top = (event.pageY - 15) + 'px';
+        };
+
+        // 마우스가 페이지에 들어오면 이미지 표시, 나가면 숨김
+        document.onmouseenter = function() {
+            cursor.style.display = 'block';
+        };
+
+        document.onmouseleave = function() {
+            cursor.style.display = 'none';
+        };
+    </script>
+</body>
+</html>

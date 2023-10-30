@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>클릭하면 2,3,4배로 늘어납니다.</h3>
+    <hr>
+    <img id="spongebob" onclick="extension()" src="../image/spongebob.png" width="100" height="100" alt="네모바지 스폰지밥">
+    <script>
+        let count = 2;
+
+        function extension(){
+            let obj = document.getElementById("spongebob");
+
+            if (count <= 4){
+                obj.style.transform=`scale(${count},1)`;
+                count += 1;
+            }
+        }
+    </script>
+</body>
+</html>

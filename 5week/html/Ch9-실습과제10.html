@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button-container {
+            display: grid;
+            grid-template-columns: repeat(4, 50px);
+            grid-gap: 10px;
+        }
+
+        .button {
+            width: 50px;
+            height: 25px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h3>계산기 만들기</h3>
+    <hr>
+    <form>
+        <input type="text" id="exp">
+    </form>
+    <br>
+    <div class="button-container">
+        <button class="button">BACK</button>
+        <button class="button">CE</button>
+        <button class="button">C</button>
+        <button class="button">=</button>
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">/</button>
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">*</button>
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">-</button>
+        <button class="button">0</button>
+        <button class="button">+</button>
+        <button class="button">NONE</button>
+        <button class="button">NONE</button>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("exp").value = "0";
+
+        let expression = "";
+
+        // 버튼 클릭 이벤트 처리
+        const buttons = document.querySelectorAll(".button");
+        buttons.forEach(button => {
+            button.addEventListener("click", function() {
+                const buttonText = this.textContent;
+                if (buttonText === "BACK") {
+                    if (expression.length > 1) expression = expression.slice(0, -1);
+                    else expression = "0";
+                } 
+                else if (buttonText === "CE" || buttonText === "C") {
+                    expression = "0"; // 계산식 초기화
+                } 
+                else if (buttonText === "=") {
+                    // 계산 수행
+                    try {
+                        expression = eval(expression); // 계산식 평가
+                    } catch (error) {
+                        expression = "Error"; // 오류가 발생한 경우 "Error" 출력
+                    }
+                } 
+                else {
+                    if (expression === "0") expression = buttonText;
+                    else expression += buttonText; // 숫자 또는 연산자 추가
+                }
+
+                // 계산식 입력창에 표시
+                document.getElementById("exp").value = expression;
+            });
+        });
+    });
+    </script>
+</body>
+</html>

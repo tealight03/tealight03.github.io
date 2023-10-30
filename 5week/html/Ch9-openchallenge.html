@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 클릭 연습</title>
+    <style>
+        td {
+            border: 1px solid black;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body onload="setRandomImg()">
+    <h3>마우스 클릭 연습</h3>
+    <hr>
+    <div id="table-body"></div>
+    <script>
+        const tableContainer = document.getElementById("table-body");
+        // 10x10 크기의 표를 생성합니다.
+        const table = document.createElement("table");
+        for (i = 1; i <= 10; i++) {
+            const row = document.createElement("tr");
+            for (j = 1; j <= 10; j++) {
+                const cell = document.createElement("td");
+                cell.onclick = setRandomImg;
+                const img = document.createElement("img");
+                img.src = "";
+                img.alt = '';
+                cell.appendChild(img);
+                row.appendChild(cell);
+            }
+            table.appendChild(row);
+        }
+        tableContainer.appendChild(table);
+
+        function setRandomImg(){
+            const imgTags = document.getElementsByTagName('img');
+
+            const filledCell = Array.from(imgTags).filter(img => img.src !== "");
+
+            filledCell.src="";
+
+            // 랜덤한 인덱스를 생성합니다.
+            const randIdx = Math.floor(Math.random() * imgTags.length);
+
+            // 선택한 이미지 태그에 "spongebob.png" 이미지를 설정합니다.
+            imgTags[randIdx].src = "../image/spongebob.png";
+            imgTags[randIdx].alt = "SpongeBob Image";
+        }
+    </script>
+</body>
+</html>

@@ -6,20 +6,31 @@
     <title>갬블링 게임</title>
     <style>
         .container {
-            margin-right: 85%;
-            border: 3px solid;
-            border-color: blueviolet;
-            border: 0 0 200 100;
+            text-align: center;
         }
 
-        .box {
-            display: inline-block;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            width: 5%;
-            margin: 10px;
-            font-size: 24px;
-            font-style: italic;
+        .numbers {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .number {
+            font-size: 2em;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        button {
+            font-size: 1em;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 1.2em;
             font-weight: bold;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -28,14 +39,37 @@
     <p>각 숫자를 클릭하면 0에서 2사이의 난수로 바뀝니다. 모두 같은 수가 나오면 승리합니다.</p>
     <hr>
     <div class="container">
-        <div class="box" onclick="random()">0</div>
-        <div class="box" onclick="random()">0</div>
-        <div class="box" onclick="random()">0</div>
+        <div class="numbers">
+            <div id="number1" class="number">0</div>
+            <div id="number2" class="number">0</div>
+            <div id="number3" class="number">0</div>
+        </div>
+        <button id="generateButton">Generate Numbers</button>
+        <p id="result"></p>
     </div>
     <script>
-        function random(){
-            
-        }
+        const numbers = document.querySelectorAll('.number');
+        const generateButton = document.getElementById('generateButton');
+        const resultParagraph = document.getElementById('result');
+
+        numbers.forEach(number => {
+            number.addEventListener('click', () => {
+                const randomValue = Math.floor(Math.random() * 3);
+                number.textContent = randomValue;
+            });
+        });
+
+        generateButton.addEventListener('click', () => {
+            const num1 = parseInt(numbers[0].textContent);
+            const num2 = parseInt(numbers[1].textContent);
+            const num3 = parseInt(numbers[2].textContent);
+
+            if (num1 === num2 && num1 === num3) {
+                resultParagraph.textContent = 'Success(click here to do again)';
+            } else {
+                resultParagraph.textContent = 'fail(click here to do again)';
+            }
+        });
     </script>
 </body>
 </html>
