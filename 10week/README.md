@@ -1,3 +1,8 @@
+# PHP 무료 웹 호스팅 사이트 url
+<img width="865" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/96539d5e-d132-4199-bd45-a5526e4a5ff1">
+
+http://davin0706.dothome.co.kr/ <b><- click here!</b>
+
 # 1. 동적 웹페이지와 정적 웹페이지의 차이를 설명하시오.
 <br>정적 웹페이지는 사용자가 페이지를 요청할 때마다 항상 동일한 내용이 표시되며,
 <br>콘텐츠의 업데이트가 필요한 경우에는 HTML파일을 수정하여 업데이트해야하는 반면,
