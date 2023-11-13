@@ -6,7 +6,7 @@
     <title>2023WebProgramming</title>
 </head>
 <body>
-    <h3>Welcome to my Web Hosting Page!!!</h3>
+    <h3>✨Welcome to my Web Hosting Page✨</h3>
     <hr>
     <ul>
         <li>
@@ -29,20 +29,6 @@
                 $a = 7; 
                 printNextNumber($a);
             ?>
-            <br><br>
-            [php code]
-            <br>function printNextNumber($a) {
-            <br>    if ($a % 2 == 1) {
-            <br>        $nextNumber = $a + 1;
-            <br>        echo "입력한 숫자 {$a}는 홀수이며, 다음 짝수는 {$nextNumber}입니다.";
-            <br>    } 
-            <br>    else {
-            <br>        echo "입력한 숫자 {$a}는 짝수입니다.";
-            <br>    }
-            <br>}
-            <br>
-            <br>$a = 7; 
-            <br>printNextNumber($a);
             <br>
         </li>
         <li>
@@ -68,29 +54,17 @@
 
                 echo "Factorial of {$number} is: " . Factorial($number);
             ?>
-            <br><br>
-            [php code]
-            <br>function Factorial($n) {
-            <br>    $result = 1;
-            <br>    $i = 1;
-            <br>
-            <br>    while ($i <= $n) {
-            <br>        $result *= $i;
-            <br>        $i++;
-            <br>    }
-            <br>
-            <br>    return $result;
-            <br>}
-            <br>
-            <br>$number = 5;
-            <br>
-            <br>echo "Factorial of {$number} is: " . Factorial($number);
             <br>
         </li>
         <li>
             <b>문제 3번</b>
             <br>다음 프로그램과 동일한 기능을 하는 프로그램을 삼항연산자( ? : )를 이용하여 작성하고 테스트하시오.
             <br>
+            <pre>
+                $value = 12;
+                if (($value % 2) == 1) print "odd";
+                else print "even";
+            </pre>
             <br>[실행결과]
             <br>
             <?php
@@ -98,11 +72,7 @@
                 $result = ($value % 2 == 1) ? "odd" : "even";
                 echo $result;
             ?>
-            <br><br>
-            [php code]
-            <br>$value = 12;
-            <br>$result = ($value % 2 == 1) ? "odd" : "even";
-            <br>echo $result;
+            <br>
         </li>
     </ul>
 </body>
