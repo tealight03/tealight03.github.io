@@ -16,6 +16,6 @@
 
     revsort($numbers);
 
-    echo "내림차순 정렬된 배열: ";
+    echo "\n내림차순 정렬된 배열: ";
     print_r($numbers);
 ?>
