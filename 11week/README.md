@@ -14,6 +14,8 @@
 <b>[풀이]</b><br>
 <img width="223" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/cda13636-878c-4505-8704-e8acc4d40051">
 <br><br><b>[실행 결과]</b><br>
+<img width="96" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/32b4d38a-b4a7-41cc-916c-3df05c706332">
+
 
 # 문제 2번
 <b>[문제]<br>배열을 내림차순으로 정렬하고 싶다. 
@@ -23,6 +25,7 @@
 <br><b>[풀이]</b><br>
 <img width="209" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/beb112be-5d04-458f-bb31-204f4663032a">
 <br><br><b>[실행 결과]</b><br>
+<img width="473" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/7ba71958-eaee-432f-aa3d-5c2d3be880cd">
 
 # 문제 3번
 <b>[문제]<br>'exam.txt' 라는 파일을 열어 
@@ -31,7 +34,8 @@
 <br><b>[풀이]</b><br>
 <img width="285" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/3dc98505-e13e-4e24-8088-bc81f459ce1d">
 <br><br><b>[실행 결과]</b><br>
-
+<img width="170" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/ecb78bf9-6398-4069-9c84-7b7175deffe6">
+<br><b>※ 현재 "exam.txt"라는 파일이 존재하지 않기 때문에 위와 같은 결과가 출력됩니다.</b>
 # 문제 4번
 <b>[문제]<br>4. 다음은 각각의 사람들이 현재까지 생활하였던 도시의 이름을 나타내었다.
 <br>
@@ -47,6 +51,8 @@
 <br><b>[풀이]</b><br>
 <img width="260" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/4f246254-6b7b-4132-98e6-664c7f417212">
 <br><br><b>[실행 결과]</b><br>
+<img width="218" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/e8e13853-6bf0-4520-aae0-268457aac354">
+
 # 문제 5번
 <b>[문제]<br>고객 정보가 들어있는 파일 client.txt가 있다. 
 <br>이 파일에 저장된 자료의 구조는 다음과 같이 ASCII 형식으로 저장되어 있다고 가정하자.
@@ -58,6 +64,8 @@
 <br><b>[풀이]</b><br>
 <img width="542" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/ac54716f-aeb4-4e6a-acac-e6d02e24999e">
 <br><br><b>[실행 결과]</b><br>
+<img width="170" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/b32a47f0-b3f1-4166-9bdf-7ec3c060cf6e">
+<br><b>※ 현재 "client.txt"라는 파일이 존재하지 않기 때문에 위와 같은 결과가 출력됩니다.</b>
 
 # [참고] PHP 웹 호스팅 사이트 url
 <img width="449" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/c4ac9d78-5551-4793-8d7a-cf0b831fdb4f">
