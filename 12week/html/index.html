@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>2023WebProgramming</title>
+    <style>
+        .btn-primary{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h3><b>✨Welcome to my Web Hosting Page✨</b></h3>
+    <hr>
+    <ul>
+        <li>
+            <details>
+                <summary><h4><span class="badge bg-success">10주차 과제</span></h4></summary>
+                <ul>
+                    <li>
+                        <p>
+                            <b>문제 1. $a라는 변수의 값이 홀수이면 그 숫자 다음 숫자인 짝수를 출력하고, $a의 값이 짝수이면 그 수를 출력하는 함수를 작성하고 테스트하시오.</b><br>
+                            <br><b>[실행결과]</b>
+                        </p>
+                        <?php
+                            function printNextNumber($a) {
+                                if ($a % 2 == 1) {
+                                    $nextNumber = $a + 1;
+                                    echo "입력한 숫자 {$a}는 홀수이며, 다음 짝수는 {$nextNumber}입니다.";
+                                } 
+                                else {
+                                    echo "입력한 숫자 {$a}는 짝수입니다.";
+                                }
+                            }
+                            
+                            $a = 7; 
+                            printNextNumber($a);
+                            echo "<br>";
+                        ?>
+                        <br>
+                    </li>
+                    <li>
+                        <p>
+                            <b>문제 2. while문을 이용하여 factorial 값을 구하는 함수를 작성하고 테스트하시오.</b>
+                        </p>
+                        <b>[실행결과]</b>
+                        <br>
+                        <?php
+                            function Factorial($n) {
+                                $result = 1;
+                                $i = 1;
+
+                                while ($i <= $n) {
+                                    $result *= $i;
+                                    $i++;
+                                }
+
+                                return $result;
+                            }
+
+                            $number = 5;
+
+                            echo "Factorial of {$number} is: " . Factorial($number);
+                            echo "<br>";
+                        ?>
+                        <br>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                문제 3. 다음 프로그램과 동일한 기능을 하는 프로그램을 삼항연산자( ? : )를 이용하여 작성하고 테스트하시오.
+                                <br>$value = 12;
+                                <br>if (($value % 2) == 1) print "odd";
+                                <br>else print "even";
+                            </b>
+                            <br><br><b>[실행결과]</b>
+                        </p>
+                        <?php
+                            $value = 12;
+                            $result = ($value % 2 == 1) ? "odd" : "even";
+                            echo $result;
+                        ?>
+                        <br>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary><h4><span class="badge bg-success">11주차 과제</span></h4></summary>
+                <ul>
+                    <li>
+                        <p>
+                            <b>문제 1. for문을 이용하여 다음과 같은 출력을 하는 프로그램을 작성하시오.</b>
+                            <br>A
+                            <br>A B
+                            <br>A B C
+                            <br>A B C D
+                            <br>A B C D E 
+                            <br>A B C D
+                            <br>A B C
+                            <br>A B
+                            <br>A
+                            <br><br><b>[실행결과]</b>
+                        </p>
+                        <?php
+                            // 상단 삼각형 출력
+                            for ($i = 1; $i <= 5; $i++) {
+                                for ($j = 1; $j <= $i; $j++) {
+                                    echo chr(64 + $j)." ";
+                                }
+                                echo "<br>";
+                            }
+                        
+                            // 하단 삼각형 출력
+                            for ($i = 4; $i >= 1; $i--) {
+                                for ($j = 1; $j <= $i; $j++) {
+                                    echo chr(64 + $j)." ";
+                                }
+                                echo "<br>";
+                            }
+                        ?>
+                        <br>
+                    </li>
+                    <li>
+                        <p>
+                            <b>문제 2. 배열을 내림차순으로 정렬하고 싶다.</b>
+                            <br>sort() 함수를 이용하여 revsort() 함수를 설계하고 테스트하시오.
+                            <br>(hint : sort와 array_reverse함수 사용)
+                            <br><br><b>[실행 결과]</b>
+                        </p>
+                        <?php
+                            function revsort(&$array) {
+                                sort($array, SORT_DESC);
+                            }
+                        
+                            // 테스트 코드
+                            $numbers = array(5, 2, 8, 4, 1);
+                        
+                            echo "원래 배열: ";
+                            print_r($numbers);
+                        
+                            revsort($numbers);
+                        
+                            echo "<br>내림차순 정렬된 배열: ";
+                            print_r($numbers);
+                            echo "<br>"
+                        ?>
+                        <br>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                문제 3. 'exam.txt' 라는 파일을 열어 
+                                <br>그 파일의 줄 수, 단어 수, 글자 수를 계산하는 프로그램을 작성하시오.
+                            </b>
+                        </p>
+                        <?php
+                            // 파일 경로
+                            $filePath = 'exam.txt';
+    
+                            // 파일이 존재하는지 확인
+                            if (file_exists($filePath)) {
+                                // 파일 읽기 모드로 열기
+                                $file = fopen($filePath, 'r');
+    
+                                // 초기화
+                                $lineCount = 0;
+                                $wordCount = 0;
+                                $charCount = 0;
+    
+                                // 파일의 각 줄을 읽어서 처리
+                                while (!feof($file)) {
+                                    $line = fgets($file);
+                                    $lineCount++;
+    
+                                    // 단어 수 및 글자 수 계산
+                                    $wordCount += str_word_count($line);
+                                    $charCount += strlen($line);
+                                }
+    
+                                // 파일 닫기
+                                fclose($file);
+    
+                                // 결과 출력
+                                echo "파일 경로: $filePath<br>";
+                                echo "줄 수: $lineCount<br>";
+                                echo "단어 수: $wordCount<br>";
+                                echo "글자 수: $charCount<br>";
+                            } else {
+                                echo "파일이 존재하지 않습니다.";
+                            }
+                            echo "<br>"
+                        ?>
+                        <br>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                문제 4. 다음은 각각의 사람들이 현재까지 생활하였던 도시의 이름을 나타내었다.
+                                <br>
+                                <br>Kim   Seoul
+                                <br>Lee    Pusan, Daegu
+                                <br>Choi   Inchon
+                                <br>Park   Suwon, Daejon
+                                <br>Jung   Kwangju, Chunchon, Wonju
+                                <br>
+                                <br>위의 값들을 연상 배열로 선언한 후 Choi 항목을 삭제한 뒤 연상 배열의 내용을 출력하는 PHP 프로그램을 작성하시오 
+                                <br>(단, vardump() 함수는 사용하지 않음).
+                                <br><br><b>[실행 결과]</b>
+                            </b>
+                        </p>
+                        <?php
+                            // 연관 배열 선언
+                            $cities = array(
+                                'Kim' => 'Seoul',
+                                'Lee' => 'Pusan, Daegu',
+                                'Choi' => 'Inchon',
+                                'Park' => 'Suwon, Daejon',
+                                'Jung' => 'Kwangju, Chunchon, Wonju'
+                            );
+    
+                            // Choi 항목 삭제
+                            unset($cities['Choi']);
+    
+                            // 결과 출력
+                            foreach ($cities as $person => $city) {
+                                echo "$person: $city<br>";
+                            }
+                        ?>
+                        <br>
+                    </li>
+                    <li>
+                        <p>
+                            <b>
+                                5. 고객 정보가 들어있는 파일 client.txt가 있다. 
+                                <br>이 파일에 저장된 자료의 구조는 다음과 같이 ASCII 형식으로 저장되어 있다고 가정하자.
+                                <br>
+                                <br>이름 [TAB] 나이 [TAB] 성별 [TAB] 이메일
+                                <br>
+                                <br>이 파일을 읽어 나이가 30세 이상의 고객을 출력하는 프로그램을 작성하시오.
+                                <br><br><b>[실행 결과]</b>
+                            </b>
+                        </p>
+                        <?php
+                            // 파일 경로
+                            $filePath = 'client.txt';
+    
+                            // 파일이 존재하는지 확인
+                            if (file_exists($filePath)) {
+                                // 파일 읽기 모드로 열기
+                                $file = fopen($filePath, 'r');
+    
+                                // 파일의 각 줄을 읽어서 처리
+                                while (!feof($file)) {
+                                    $line = fgets($file);
+    
+                                    // 각 줄을 탭으로 분리하여 배열로 저장
+                                    $data = explode("\t", $line);
+    
+                                    // 배열의 요소가 적절한지 확인하고 나이가 30세 이상인 경우 출력
+                                    if (isset($data[1]) && is_numeric($data[1]) && $data[1] >= 30) {
+                                        echo "이름: $data[0], 나이: $data[1], 성별: $data[2], 이메일: $data[3]\n";
+                                    }
+                                }
+    
+                                // 파일 닫기
+                                fclose($file);
+                            } else {
+                                echo "파일이 존재하지 않습니다.";
+                            }
+                        ?>
+                        <br>
+                    </li>
+            </details>
+        </li>
+        <li>
+            <details>
+                <summary><h4><span class="badge bg-success">12주차 과제</span></h4></summary>
+                <ul>
+                    <li>
+                        <p>
+                            <b>로그인 폼 구현하기</b><br>
+                            <br><button type="button" class="btn btn-primary"><a href="./form.html" style="color: white; text-decoration: none;"><b>click here!</b></a></button>
+                        </p>
+                    </li>
+            </details>
+        </li>
+    </ul>
+</body>
+</html>
