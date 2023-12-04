@@ -1,0 +1,1 @@
+prompt('복사해 가세요', "[" + document.title + "] (" + window.location + ")")
