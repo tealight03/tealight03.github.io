@@ -54,3 +54,62 @@ register() 함수가 실행되도록 정의하고 있으므로 이에 따라 reg
   </li>
   <li>파일명 혹은 폴더 위치를 헷갈리지 않도록 잘 배치해야한다.(파일을 불러올 때 오류 발생할 수 있음)</li>
 </ol>
+
+# functions.php의 동작
+<b>[기능을 수행하는 함수들]</b><br>
+<ul>
+  <li>
+    <b>session_start()</b><br>
+    <img width="392" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/dff54378-a773-41cf-9b1b-0d78cae84898">
+    <br>서버 측에 데이터를 저장하여 클라이언트와 상호 작용을 지원하는 데 사용하는 세션을 시작하도록 한다.
+    <br>또한 데이터베이스에 연결해 username, email 등의 사용자 정보를 받아오기 위한 변수와
+    <br>error를 처리하기 위한 errors 변수를 생성한다.
+  </li>
+  <li>
+    <b>register()</b><br>
+    <img width="583" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/3cfdd0ac-f2a5-40ed-b5a0-da4ff60571cf">
+    <br>회원가입 버튼 클릭 시 호출되는 함수이다.
+    <br>사용자에게 폼에 맞춰 데이터를 입력하도록 하여 해당 데이터를 받아오고,
+    <br>모든 데이터들이 각 폼의 요구사항에 맞게 입력되었는지 확인한 후 errors에 저장한다.
+    <br>error를 이용해 오류 사항이 없는지 확인하고,
+    <br>오류가 없는 경우 비밀번호를 md5 형식으로 암호화하여
+    <br>user type에 따라 데이터베이스에 사용자 데이터를 저장한다.
+  </li>
+  <li>
+    <b>getUserbyId()</b><br>
+    <img width="355" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/8be54f8c-7dad-4eb3-a1f6-5a7adfcd18d3">
+    <br>데이터베이스에서 id라는 변수에 저장된 데이터와 사용자 id가 동일한 사용자 계정 데이터를 모두 추출하는 SQL 쿼리를 작성한다.
+    <br>mysqli_query() 함수로 해당 SQL 쿼리문을 실행하고, 그 결과를 result 변수에 저장한다.
+    <br>result에서 첫 번째 행의 데이터를 연관배열 형태로 추출하고 그 값을 반환한다.
+  </li>
+  <li>
+    <b>display_error()</b><br>
+    <img width="339" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/aa0b673d-f18a-413a-828c-c40461ff26d3">
+    <br>현재 errors에 저장된 데이터가 0개 이상이라면(즉 1개라도 error가 발생했다면)
+    <br>errors의 데이터를 출력할 <div>콘텐츠를 동적으로 생성하고 그 안에 errors에 저장된 데이터를 출력하도록 한다.
+  </li>
+  <li>
+    <b>isLoggedIn()</b><br>
+    <img width="254" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/2317c566-128e-4f7a-abda-c1dfb680fd98">
+    <br>현재 세션에 'user'라는 키로 저장된 데이터가 존재하는지 확인하여
+    <br>존재할 경우 true를, 존재하지 않는다면 false를 반환한다.
+  </li>
+  <li>
+    <b>login()</b><br>
+    <img width="689" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/09773d96-a5b8-42f1-a686-746520c67c7c">
+    <br>로그인 폼으로 입력받은 값을 가져와 각 데이터가 올바르게 입력되었는지 검수한다.
+    <br>입력된 데이터에 문제가 없다면 이 데이터를 가지고 로그인을 시도한다.
+    <br>먼저, 비밀번호를 md5 형식으로 암호화하여 id와 함께 현재 연동된 데이터베이스에서 데이터를 탐색한다.
+    <br>탐색 결과, 반환된 데이터가 1개라면 해당 사용자 정보를 연관 배열로 추출한다.
+    <br>사용자가 Admin일 경우 세션을 그에 알맞게 변경해준다.
+    <br>만약 반환된 데이터가 1개가 아니라면 errors에 오류 메시지를 추가해준다.
+    <br>※ "Wrong username/password combination"
+  </li>
+  <li>
+    <b>isAdmin()</b><br>
+    <img width="545" alt="image" src="https://github.com/tealight03/tealight03.github.io/assets/138011998/a90f060b-f1d6-41c9-a06a-acf7ea8e06ff">
+    <br>현재 세션에 'user'라는 키로 저장된 데이터가 존재하는지, 
+    <br>해당 데이터의 'user_type'이 'admin'인지 확인하여
+    <br>'admin'일 경우 true를, 아닐 경우 false를 반환한다.
+  </li>
+</ul>
